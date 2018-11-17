@@ -24,7 +24,6 @@
   },
   "permissions": [
     "storage",
-    "bookmarks",
-    "storage"
+    "bookmarks"
   ]
 }
