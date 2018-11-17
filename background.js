@@ -98,7 +98,6 @@ browser.omnibox.setDefaultSuggestion({
 
 let lastInput = "";
 browser.omnibox.onInputChanged.addListener(function(input, suggest) {
-	console.log("onInputChanged", input);
 	lastInput = input;
 
 	suggest(searchBookmarkCash(input));
