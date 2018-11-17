@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Omnibox Bookmark Search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search your Bookmarks from the Omnibox",
   "applications": {
     "gecko": {
@@ -19,8 +19,12 @@
   "background": {
     "scripts": ["fuse.min.js", "background.js"]
   },
+  "options_ui": {
+    "page": "options/options.html"
+  },
   "permissions": [
     "storage",
-    "bookmarks"
+    "bookmarks",
+    "storage"
   ]
 }
