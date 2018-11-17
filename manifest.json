@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Omnibox Bookmark Search",
+  "version": "1.0.0",
+  "description": "Search your Bookmarks from the Omnibox",
+  "applications": {
+    "gecko": {
+      "id": "{aef942c0-08e2-4a7d-8b75-82bb343ab515}",
+      "strict_min_version": "48.0"
+    }
+  },
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+  "omnibox": {
+    "keyword": "b"
+  },
+  "background": {
+    "scripts": ["fuse.min.js", "background.js"]
+  },
+  "permissions": [
+    "storage",
+    "bookmarks"
+  ]
+}
